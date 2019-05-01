@@ -1,5 +1,5 @@
 from queue import PriorityQueue
-import State
+from State import State
 
 
 class State_string(State):
@@ -9,7 +9,7 @@ class State_string(State):
         self.dist = self.GetDist()
 
     def GetDist(self):
-        if self.value_in == self.goal:
+        if self.value == self.goal:
             return 0
         dist = 0
         for i in range(len(self.goal)):

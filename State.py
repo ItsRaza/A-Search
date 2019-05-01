@@ -18,7 +18,6 @@ class State(object):
             self.path = [value_in]
             self.start = start
             self.goal = goal
-            self.solver = solver
 
     # Empty functions will be defined in child class
     def GetDist(self):

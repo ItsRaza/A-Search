@@ -1,7 +1,7 @@
 from queue import PriorityQueue
-import State
-import State_string
-import Solver
+from State import State
+from State_string import State_string
+from Solver import Solver
 
 if __name__ == "__main__":
     start1 = "hma"

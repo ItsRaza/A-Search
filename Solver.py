@@ -1,6 +1,6 @@
 from queue import PriorityQueue
-import State
-import State_string
+from State import State
+from State_string import State_string
 
 
 class Solver:
@@ -18,7 +18,7 @@ class Solver:
         while(not self.path and self.priorityQ.qsize()):
             closestChild = self.priorityQ.get()[2]
             closestChild.CreateChildren()
-            visitedQ.append(closestChild.value)
+            self.visitedQ.append(closestChild.value)
             for child in closestChild.children:
                 if child.value not in self.visitedQ:
                     count += 1
